@@ -1,0 +1,32 @@
+
+🔍 Input from User
+searchInput: City name entered by the user (e.g., "New York")
+
+
+
+📅 5-Day Forecast Data (Replace mockWeatherData.forecast with API response):
+Each item in the forecast array contains:
+
+day: Day of the week or date (e.g., "Thursday")
+
+high: Max temperature for the day (e.g., 28)
+
+low: Min temperature for the day (e.g., 20)
+
+condition: Forecast condition (e.g., "Sunny")
+
+icon: Condition type to display the correct icon (e.g., "sunny", "rainy", etc.)
+
+✅ Summary of Required API Inputs & Outputs:
+Input From User	API Endpoint	Expected Output
+searchInput (city name)	/weather (for current weather)	temperature, feels_like, humidity, wind, visibility, uv, etc.
+/forecast (for daily forecast)	5-day forecast with date, temp_max, temp_min, condition
+
+✅ Suggested Weather API:
+OpenWeatherMap API
+
+Endpoint for current weather:
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units=metric
+
+Endpoint for 5-day forecast:
+https://api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}&units=metric
