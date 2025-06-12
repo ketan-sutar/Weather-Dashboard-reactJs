@@ -1,22 +1,44 @@
 import React from "react";
 import { Wind, Droplets, Eye, Sun } from "lucide-react";
 
-const WeatherDetails = ({ current }) => (
-  <div className="space-y-4">
-    <DetailRow label="Wind Speed" value={`${current.windSpeed} km/h`} icon={<Wind />} />
-    <DetailRow label="Humidity" value={`${current.humidity}%`} icon={<Droplets />} />
-    <DetailRow label="Visibility" value={`${current.visibility} km`} icon={<Eye />} />
-    <DetailRow label="UV Index" value={current.uvIndex} icon={<Sun />} />
+const WeatherDetails = ({ current, textColor }) => (
+  <div className="space-y-3">
+    <DetailRow
+      label="Wind"
+      value={`${current.windSpeed} m/s`}
+      icon={<Wind />}
+      textColor={textColor}
+    />
+    <DetailRow
+      label="Humidity"
+      value={`${current.humidity}%`}
+      icon={<Droplets />}
+      textColor={textColor}
+    />
+    <DetailRow
+      label="Visibility"
+      value={`${current.visibility} km`}
+      icon={<Eye />}
+      textColor={textColor}
+    />
+    <DetailRow
+      label="UV Index"
+      value={current.uvIndex || "N/A"}
+      icon={<Sun />}
+      textColor={textColor}
+    />
   </div>
 );
 
-const DetailRow = ({ label, value, icon }) => (
-  <div className="flex items-center justify-between bg-white/10 rounded-xl p-4">
-    <div className="flex items-center">
-      <span className="w-5 h-5 text-white/80 mr-3">{icon}</span>
-      <span className="text-white/80">{label}</span>
+const DetailRow = ({ label, value, icon, textColor }) => (
+  <div
+    className={`flex items-center justify-between bg-white/10 p-3 rounded-xl ${textColor}`}
+  >
+    <div className="flex items-center gap-2">
+      {icon}
+      <span>{label}</span>
     </div>
-    <span className="text-white font-semibold">{value}</span>
+    <span className="font-semibold">{value}</span>
   </div>
 );
 
