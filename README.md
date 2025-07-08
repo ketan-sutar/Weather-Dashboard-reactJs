@@ -14,8 +14,29 @@
 
 
 
+*DESCRIPTION*: The Weather Dashboard is a responsive and interactive web application built with React.js, designed to display real-time weather information and a 5-day forecast for any city in the world. It fetches live weather data from the OpenWeatherMap API and dynamically updates the UI based on the current weather conditions.
 
+* Tech Stack*:
+- React.js – Frontend framework for component-based architecture and state management using hooks
 
+- Tailwind CSS – Utility-first CSS framework for fast, responsive UI styling
+
+- OpenWeatherMap API – Provides current weather and 5-day forecast data
+
+- Lucide React – Clean icon set for weather metrics like wind, humidity, and visibility
+
+- Vite – Fast build tool for development and bundling
+
+- JavaScript (ES6+) – Used for asynchronous API requests and logic
+
+*Core feature*:
+
+*City Weather Search*:
+- Users can search for any city. The app displays:
+
+- Current Weather: Temperature, humidity, wind speed, visibility, “feels like” temperature, and condition
+
+- 5-Day Forecast: Daily high and low temperatures, weather icons, and conditions grouped by day
 
 
 
