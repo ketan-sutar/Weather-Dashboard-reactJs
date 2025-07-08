@@ -16,7 +16,8 @@
 
 *DESCRIPTION*: The Weather Dashboard is a responsive and interactive web application built with React.js, designed to display real-time weather information and a 5-day forecast for any city in the world. It fetches live weather data from the OpenWeatherMap API and dynamically updates the UI based on the current weather conditions.
 
-* Tech Stack*:
+*Tech Stack*:
+
 - React.js – Frontend framework for component-based architecture and state management using hooks
 
 - Tailwind CSS – Utility-first CSS framework for fast, responsive UI styling
@@ -39,11 +40,43 @@
 - 5-Day Forecast: Daily high and low temperatures, weather icons, and conditions grouped by day
 
 
+*Dynamic Theming*: The background and text color change dynamically based on the current weather condition (e.g., rain, snow, clear skies).
+Custom logic maps each condition to a unique gradient theme, making the interface visually engaging.
 
+*Component-Based UI*: Modular and reusable components ensure better code organization and readability:
 
+- WeatherDashboard – Handles data fetching, input, and layout.
 
+- CurrentWeather – Displays the current weather in detail.
 
+- ForecastCard – Renders each of the 5-day forecast cards.
 
+- WeatherDetails – Shows additional metrics like wind, humidity, visibility, and UV index.
+
+*Responsive Design*:
+- Fully responsive layout using Tailwind’s grid system.
+
+- Forecast cards adjust from a single column on mobile to a 5-column layout on larger screens.
+
+- Includes hover effects and transitions for a smooth UI experience.
+
+*How It Works*:
+- User enters a city name and clicks the Search button.
+
+- App fetches current weather and 5-day forecast data using fetch and async/await.
+
+- Forecast data is grouped by day using timestamps (dt_txt).
+
+- Data is parsed and passed to UI components for rendering.
+
+- Background and text color dynamically update based on weather conditions.
+
+*Environment Handling*:
+API key is managed securely using Vite’s environment variables
+
+Stored in a .env file as VITE_WEATHER_API_KEY and accessed using import.meta.env
+
+Keeps sensitive credentials out of the source code
 
 
 
