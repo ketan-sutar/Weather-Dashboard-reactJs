@@ -78,10 +78,8 @@ Stored in a .env file as VITE_WEATHER_API_KEY and accessed using import.meta.env
 
 Keeps sensitive credentials out of the source code
 
-
-
-
-
+*Output*:
+![screencapture-localhost-5173-2025-07-08-11_07_30](https://github.com/user-attachments/assets/c79c5cff-439f-4af4-8f24-516a926c47a1)
 
 
 
