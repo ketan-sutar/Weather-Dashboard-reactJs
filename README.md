@@ -1,3 +1,36 @@
+# WEATHER DASHBOARD
+
+*COMPANY*: CODETECH IT SOLUTIONS
+
+*NAME*: KETAN SUTAR
+
+*INTERN ID*: CT08DF557
+
+*DOMAIN*: REACT.JS WEB DEVELOPMENT
+
+*DURATION*:8 WEEKS
+
+*MENTOR*: NEELA SANTOSH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
